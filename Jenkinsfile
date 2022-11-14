@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage ('Checkout') {
 			steps {
-				git branch:'master', url: 'https://github.com/ict3x03-Learn4Fund/Learn4Fund'
+				git branch:'main', url: 'https://github.com/ict3x03-Learn4Fund/Learn4Fund'
 			}
 		}
 		stage('Code Quality Check via SonarQube') {
